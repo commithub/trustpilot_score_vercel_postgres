@@ -1,0 +1,20 @@
+{
+  "name": "simple-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@vercel/postgres": "^0.5.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.2.29"
+  }
+}

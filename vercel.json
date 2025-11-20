@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/update-trustpilot",
+      "schedule": "0 9 * * *"
+    }
+  ]
+}
+
